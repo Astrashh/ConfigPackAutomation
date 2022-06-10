@@ -13,6 +13,7 @@ prev_version=${prev_version_diff#-version: }
 
 if [ -z "$version" ]; then
     echo "No version change detected"
+    exit 1
 else
     echo "Detected version change v$prev_version -> v$version"
     sh update-changelog.sh $CHANGELOG $prev_version $version
