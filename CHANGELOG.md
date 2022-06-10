@@ -1,44 +1,12 @@
 # Test Changelog
 
 ## [Unreleased]
-<!-- UNRELEASED START -->
-<!-- Title -->
-
-<!-- List your changes under the relevant subheading below, uncommenting them if applicable -->
-<!-- ### Added -->
-
-
-<!-- ### Changed -->
-
-
-<!-- ### Removed -->
-
-
-<!-- ### Fixed -->
-
-
-<!-- ### Notes -->
-
-
-<!-- UNRELEASED END -->
+# Removed
+- Removed comments from changelog
 
 ## [0.1.17]
-Test title
-
-<!-- List your changes under the relevant subheading below, uncommenting them if applicable -->
 ### Added
 - More comments here
-
-<!-- ### Changed -->
-
-
-<!-- ### Removed -->
-
-
-<!-- ### Fixed -->
-
- 
-<!-- ### Notes -->
 
 ## [0.1.16]
 ### Added
@@ -47,13 +15,7 @@ Test title
 ### Changed
 - The version
 
-<!-- ### Removed -->
-
-
-<!-- ### Fixed -->
-
 ## [0.1.15]
-
 
 ## [0.1.14]
 ### Added
