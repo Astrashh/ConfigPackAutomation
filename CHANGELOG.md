@@ -3,10 +3,10 @@
 ## [Unreleased]
 <!-- UNRELEASED START -->
 ### Added
-
+- Automatic unstable releases
 
 ### Changed
-
+- Changed workflow to use one job
 
 ### Removed
 
