@@ -2,19 +2,22 @@
 
 ## [Unreleased]
 <!-- UNRELEASED START -->
-### Added
+<!-- ### Added -->
 
 
-### Changed
+<!-- ### Changed -->
 
 
-### Removed
+<!-- ### Removed -->
 
 
-### Fixed
+<!-- ### Fixed -->
 
 
 <!-- UNRELEASED END -->
+
+## [0.1.15]
+
 
 ## [0.1.14]
 ### Added
@@ -31,7 +34,8 @@
 ### Added
 - Everything
 
-[Unreleased]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.14...HEAD
+[Unreleased]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.15...HEAD
+[0.1.15]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.14...v0.1.15
 [0.1.14]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.13...v0.1.14
 [0.1.13]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.12...v0.1.13
 [1.0.0]: https://github.com/Astrashh/ConfigPackAutomation/releases/tag/v1.0.0
