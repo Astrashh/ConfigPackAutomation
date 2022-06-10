@@ -39,6 +39,8 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
+          message: Version ${{ env.version }}
+          tag: v${{ env.version }} -F ${{ env.new_changelog }} --cleanup=verbatim
           add: CHANGELOG.md
       - name: release
         uses: softprops/action-gh-release@v1
