@@ -29,7 +29,7 @@ jobs:
     #  changelog: CHANGELOG.md
     #  new_changelog: CHANGELOG_NEW.md
     steps:
-      - run: echo {{ needs.check-version-bump.outputs.version-bumped }}
+      - run: echo ${{ needs.check-version-bump.outputs.version-bumped }}
     #  - name: create-artifacts
     #    run: zip -r ./overworld.zip *
     #  - name: update-changelog
