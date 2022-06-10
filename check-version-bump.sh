@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Relevant files
-CHANGELOG=CHANGELOG.md
 PACK_MANIFEST=pack.yml
 
 # Search HEAD diff for a change in the pack version
@@ -11,15 +9,12 @@ prev_version_diff=$(git diff HEAD^ HEAD "$PACK_MANIFEST" | grep '^-version: ')
 version=${version_diff#+version: }
 prev_version=${prev_version_diff#-version: }
 
-VERSION_BUMPED=false
-
 if [ -z "$version" ]; then
+    echo "VERSION_BUMPED=false" >> "$GITHUB_ENV"
     echo "No version change detected"
 else
-    VERSION_BUMPED=true
+    echo "VERSION_BUMPED=true" >> "$GITHUB_ENV"
+    echo "PREVIOUS_VERSION=$prev_version" >> "$GITHUB_ENV"
+    echo "VERSION=$version" >> "$GITHUB_ENV"
     echo "Detected version change v$prev_version -> v$version"
-    #sh update-changelog.sh $CHANGELOG $prev_version $version
-    #echo "Committing changelog"
-    #git add $CHANGELOG
-    #git commit -m "Version $version"
 fi
