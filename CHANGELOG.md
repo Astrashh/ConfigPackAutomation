@@ -6,13 +6,13 @@
 
 
 ### Changed
-
+- Dynamically grab repo url
 
 ### Removed
 
 
 ### Fixed
-
+- Using incorrect repo url
 
 <!-- UNRELEASED END -->
 
