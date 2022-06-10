@@ -6,7 +6,7 @@
 
 
 ### Changed
-- Moved scripts to `/scripts` directory
+
 
 ### Removed
 
@@ -15,6 +15,10 @@
 
 
 <!-- UNRELEASED END -->
+
+## [0.2.2]
+### Changed
+- Moved scripts to `/scripts` directory
 
 ## [0.2.1]
 ### Fixed
@@ -69,7 +73,8 @@
 ### Added
 - Everything
 
-[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.1...HEAD
+[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.2...HEAD
+[0.2.2]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.1.21...v0.2.0
 [0.1.21]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.1.20...v0.1.21
