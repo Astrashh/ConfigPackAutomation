@@ -6,15 +6,22 @@
 
 
 ### Changed
-- Dynamically grab repo url
+
 
 ### Removed
 
 
 ### Fixed
-- Using incorrect repo url
+
 
 <!-- UNRELEASED END -->
+
+## [0.1.21]
+### Changed
+- Dynamically grab repo url
+
+### Fixed
+- Using incorrect repo url
 
 ## [0.1.20]
 ### Added
@@ -55,7 +62,8 @@
 ### Added
 - Everything
 
-[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.1.20...HEAD
+[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.1.21...HEAD
+[0.1.21]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.1.20...v0.1.21
 [0.1.20]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.1.19...v0.1.20
 [0.1.19]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.1.18...v0.1.19
  [0.1.18]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.1.17...v0.1.18
