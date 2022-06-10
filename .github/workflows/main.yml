@@ -20,17 +20,17 @@ jobs:
           fetch-depth: '2'
   
       - name: check-version-bump
-        run: sh ./check-version-bump.sh
+        run: sh ./scripts/check-version-bump.sh
 
       - name: create-artifacts
         run: zip -r ./overworld.zip *
 
       - name: grab-new-changelog
-        run: sh ./grab-new-changelog.sh
+        run: sh ./scripts/grab-new-changelog.sh
         if: env.version-bumped == 'true'
 
       - name: update-changelog
-        run: sh ./update-changelog.sh
+        run: sh ./scripts/update-changelog.sh
         if: env.version-bumped == 'true'
 
       - name: push-update-changelog

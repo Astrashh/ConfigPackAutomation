@@ -6,7 +6,7 @@
 
 
 ### Changed
-
+- Moved scripts to `/scripts` directory
 
 ### Removed
 
