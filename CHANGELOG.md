@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 <!-- UNRELEASED START -->
+<!-- ### Added -->
+
+
+<!-- ### Changed -->
+
+
+<!-- ### Removed -->
+
+
+<!-- ### Fixed -->
+
+
+<!-- UNRELEASED END -->
+
+## [0.1.16]
 ### Added
 - Some more text right here
 
@@ -12,9 +27,6 @@
 
 
 <!-- ### Fixed -->
-
-
-<!-- UNRELEASED END -->
 
 ## [0.1.15]
 
@@ -34,7 +46,8 @@
 ### Added
 - Everything
 
-[Unreleased]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.15...HEAD
+[Unreleased]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.16...HEAD
+[0.1.16]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.15...v0.1.16
 [0.1.15]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.14...v0.1.15
 [0.1.14]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.13...v0.1.14
 [0.1.13]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.12...v0.1.13
