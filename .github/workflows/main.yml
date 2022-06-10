@@ -30,6 +30,7 @@ jobs:
       changelog: CHANGELOG.md
       new_changelog: CHANGELOG_NEW.md
     steps:
+      - uses: actions/checkout@v3
       - name: create-artifacts
         run: zip -r ./overworld.zip *
       - name: update-changelog
