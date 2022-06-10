@@ -27,6 +27,7 @@ jobs:
 
       - name: grab-new-changelog
         run: sh ./grab-new-changelog.sh
+        if: env.version-bumped == 'true'
 
       - name: update-changelog
         run: sh ./update-changelog.sh
@@ -55,8 +56,8 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
-          prerelease: true
+          prerelease: false
           title: "Latest Build"
           files: |
             overworld.zip
-        if: env.version-bumped == 'false'
+
