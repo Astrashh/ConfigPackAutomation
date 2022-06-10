@@ -16,4 +16,4 @@ jobs:
         run: sh ./check-version-bump.sh
       - name: Update Changelog
         if: env.VERSION_BUMPED == 'true'
-        run: echo 'Updating Changelog..'
+        run: sh ./update-changelog.sh
