@@ -1,8 +1,11 @@
 # Test Changelog
 
 ## [Unreleased]
+<!-- UNRELEASED START -->
 # Removed
 - Removed comments from changelog
+
+<!-- UNRELEASED END -->
 
 ## [0.1.17]
 ### Added
