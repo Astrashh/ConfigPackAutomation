@@ -2,7 +2,6 @@
 
 # Moves unreleased section to a new version section
 
-GITHUB_REPO='https://github.com/PolyhedralDev/TerraOverworldConfig'
 # Delimiters used to identify the unreleased changelog section:
 START_DELIMITER='UNRELEASED START'
 END_DELIMITER='UNRELEASED END'
@@ -50,10 +49,10 @@ sed -i "/$END_DELIMITER/ {
     }" $changelog
 
 echo '  - Adding new version anchor'
-sed -i "/^\[Unreleased]/a [$version]: $GITHUB_REPO/compare/v$previous_version...v$version" $changelog
+sed -i "/^\[Unreleased]/a [$version]: $repo_url/compare/v$previous_version...v$version" $changelog
 
 echo '  - Updating unreleased anchor'
-sed -i "s|^\[Unreleased\]: .*|[Unreleased]: $GITHUB_REPO/compare/v$version...HEAD|" $changelog
+sed -i "s|^\[Unreleased\]: .*|[Unreleased]: $repo_url/compare/v$version...HEAD|" $changelog
 
 echo "v$version changelog:"
 echo '---'

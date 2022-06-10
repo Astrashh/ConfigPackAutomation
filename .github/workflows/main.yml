@@ -29,6 +29,7 @@ jobs:
       previous_version: ${{ needs.check-version-bump.outputs.previous-version }}
       changelog: CHANGELOG.md
       new_changelog: CHANGELOG_NEW.md
+      repo_url: ${{ github.server_url }}/${{ github.repository }}
     steps:
       - uses: actions/checkout@v3
       - name: create-artifacts
