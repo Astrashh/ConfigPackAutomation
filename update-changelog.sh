@@ -2,31 +2,11 @@
 
 # Moves unreleased section to a new version section
 
-# Delimiters used to identify the unreleased changelog section:
-START_DELIMITER='UNRELEASED START'
-END_DELIMITER='UNRELEASED END'
-
-echo "Updating changelog for v$version:"
-
-# Copy unreleased changelog to temporary file
-echo '- Extracting unreleased changelog'
-temp_changelog=CHANGELOG_NEW.md
-sed "1,/$START_DELIMITER/ d; /$END_DELIMITER/,$ d" $changelog > $new_changelog
-
-# Remove unused subheadings from new changelog
-echo '- Stripping empty titles from changelog'
-echo "$(awk '/^$/ {if (i) {b=b $0 "\n"} else {print $0 }; next} \
-    /^###/ {i=1; b=$0; next} {if (i) {print b}; i=0; print $0; next}' $new_changelog)" > $new_changelog 
-
-if ! grep -q '[^[:space:]]' "$new_changelog"; then
-    echo '  - WARNING: Unreleased changelog is empty!'
-fi
-
-echo "- Updating $changelog file:"
+echo "Updating $changelog for v$version:"
 
 echo '  - Resetting unreleased changelog'
-sed -ni "1,/$START_DELIMITER/ p; /$END_DELIMITER/,$ p" $changelog
-sed -i "/$START_DELIMITER/ {
+sed -ni "1,/$start_delimiter/ p; /$end_delimiter/,$ p" $changelog
+sed -i "/$start_delimiter/ {
         a ### Added
         a
         a
@@ -42,7 +22,7 @@ sed -i "/$START_DELIMITER/ {
     }" $changelog
 
 echo '  - Adding new version section after unreleased section'
-sed -i "/$END_DELIMITER/ {
+sed -i "/$end_delimiter/ {
         a
         a ## [$version]
         r $new_changelog
