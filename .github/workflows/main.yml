@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: check-version-bump
     if: ${{ needs.check-version-bump.outputs.version-bumped }}
-    environment:
+    env:
       version: ${{ needs.check-version-bump.outputs.version }}
       previous_version: ${{ needs.check-version-bump.outputs.previous-version }}
       changelog: CHANGELOG.md
