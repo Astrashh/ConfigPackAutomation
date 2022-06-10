@@ -2,13 +2,26 @@
 
 ## [Unreleased]
 <!-- UNRELEASED START -->
+### Added
+
+
+### Changed
+
+
+### Removed
+
+
+### Fixed
+
+
+<!-- UNRELEASED END -->
+
+## [0.1.19]
 # Removed
 - Removed comments from changelog
 
 # Fixed
 - Missing delimiters
-
-<!-- UNRELEASED END -->
 
 ## [0.1.17]
 ### Added
@@ -38,7 +51,8 @@
 ### Added
 - Everything
 
-[Unreleased]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.18...HEAD
+[Unreleased]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.19...HEAD
+[0.1.19]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.18...v0.1.19
 [0.1.18]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.17...v0.1.18
 [0.1.17]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.16...v0.1.17
 [0.1.16]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.15...v0.1.16
