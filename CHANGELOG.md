@@ -3,7 +3,7 @@
 ## [Unreleased]
 <!-- UNRELEASED START -->
 ### Added
-- Added release commit & tag information
+
 
 ### Changed
 
@@ -15,6 +15,10 @@
 
 
 <!-- UNRELEASED END -->
+
+## [0.1.20]
+### Added
+- Added release commit & tag information
 
 ## [0.1.19]
 # Removed
@@ -51,7 +55,8 @@
 ### Added
 - Everything
 
-[Unreleased]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.19...HEAD
+[Unreleased]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.20...HEAD
+[0.1.20]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.19...v0.1.20
 [0.1.19]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.18...v0.1.19
  [0.1.18]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.17...v0.1.18
 [0.1.17]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.16...v0.1.17
