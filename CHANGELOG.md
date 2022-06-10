@@ -2,11 +2,11 @@
 
 ## [Unreleased]
 <!-- UNRELEASED START -->
-<!-- ### Added -->
+### Added
+- Some more text right here
 
-
-<!-- ### Changed -->
-
+### Changed
+- The version
 
 <!-- ### Removed -->
 
