@@ -12,7 +12,7 @@
 
 
 ### Fixed
-
+- Fixed typo with environment vars in script
 
 <!-- UNRELEASED END -->
 

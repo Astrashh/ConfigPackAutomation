@@ -9,9 +9,9 @@ jobs:
   release:
     runs-on: ubuntu-latest
     env:
+      repo_url: ${{ github.server_url }}/${{ github.repository }}
       changelog: CHANGELOG.md
       new_changelog: CHANGELOG_NEW.md
-      repo_url: ${{ github.server_url }}/${{ github.repository }}
       start_delimiter: UNRELEASED START
       end_delimiter: UNRELEASED END
     steps:
