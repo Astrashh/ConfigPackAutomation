@@ -12,9 +12,13 @@
 
 
 ### Fixed
-- Fixed typo with environment vars in script
+
 
 <!-- UNRELEASED END -->
+
+## [0.2.1]
+### Fixed
+- Fixed typo with environment vars in script
 
 ## [0.2.0]
 
@@ -65,7 +69,8 @@
 ### Added
 - Everything
 
-[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.1...HEAD
+[0.2.1]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.1.21...v0.2.0
 [0.1.21]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.1.20...v0.1.21
 [0.1.20]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.1.19...v0.1.20
