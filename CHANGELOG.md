@@ -5,6 +5,9 @@
 # Removed
 - Removed comments from changelog
 
+# Fixed
+- Missing delimiters
+
 <!-- UNRELEASED END -->
 
 ## [0.1.17]
