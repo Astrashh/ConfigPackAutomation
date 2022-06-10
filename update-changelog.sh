@@ -13,7 +13,7 @@ echo "Updating changelog for v$VERSION:"
 
 # Copy unreleased changelog to temporary file
 echo '- Extracting unreleased changelog'
-temp_changelog=$(mktemp)
+temp_changelog=CHANGELOG_NEW.md
 sed "1,/$START_DELIMITER/ d; /$END_DELIMITER/,$ d" $CHANGELOG > $temp_changelog
 
 # Remove unused subheadings from new changelog
@@ -61,5 +61,3 @@ echo "v$VERSION changelog:"
 echo '---'
 cat $temp_changelog 
 echo '---'
-
-rm $temp_changelog

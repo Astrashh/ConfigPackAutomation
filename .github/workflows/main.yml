@@ -12,8 +12,17 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: '2'
+      - name: Create Artifacts
+        run: zip -r ./overworld.zip *
       - name: Check Version Bump
         run: sh ./check-version-bump.sh
       - name: Update Changelog
         if: env.VERSION_BUMPED == 'true'
         run: sh ./update-changelog.sh
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ env.VERSION }}
+          body_path: CHANGELOG_NEW.md
+          files: |
+            overworld.zip
