@@ -28,6 +28,9 @@ echo "- Updating $changelog file:"
 echo '  - Resetting unreleased changelog'
 sed -ni "1,/$START_DELIMITER/ p; /$END_DELIMITER/,$ p" $changelog
 sed -i "/$START_DELIMITER/ {
+        a <!-- Title -->
+        a
+        a <!-- List your changes under the relevant subheading below, uncommenting them if applicable -->
         a <!-- ### Added -->
         a
         a
@@ -38,6 +41,9 @@ sed -i "/$START_DELIMITER/ {
         a
         a
         a <!-- ### Fixed -->
+        a
+        a 
+        a <!-- ### Notes -->
         a
         a
     }" $changelog
