@@ -32,7 +32,8 @@
 ### Added
 - Everything
 
-[Unreleased]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.17...HEAD
+[Unreleased]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.18...HEAD
+[0.1.18]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.17...v0.1.18
 [0.1.17]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.16...v0.1.17
 [0.1.16]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.15...v0.1.16
 [0.1.15]: https://github.com/PolyhedralDev/TerraOverworldConfig/compare/v0.1.14...v0.1.15
