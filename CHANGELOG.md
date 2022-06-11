@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 ### Added
-
+- Include polybot info in release
 
 ### Changed
 
