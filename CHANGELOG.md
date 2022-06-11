@@ -1,6 +1,39 @@
 # Test Changelog
 
 ## [Unreleased]
+
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
+### Added
+
+
+### Changed
+
+
+### Removed
+
+
+### Fixed
+
+
+## [Unreleased]
+
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
+### Added
+
+
+### Changed
+
+
+### Removed
+
+
+### Fixed
+
+
 ### Added
 
 
@@ -14,17 +47,33 @@
 
 
 ## [0.2.2]
+
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
 ### Changed
 - Moved scripts to `/scripts` directory
 
 ## [0.2.1]
+
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
 ### Fixed
 - Fixed typo with environment vars in script
 
 ## [0.2.0]
 
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
+
 
 ## [0.1.21]
+
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
 ### Changed
 - Dynamically grab repo url
 
@@ -32,10 +81,18 @@
 - Using incorrect repo url
 
 ## [0.1.20]
+
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
 ### Added
 - Added release commit & tag information
 
 ## [0.1.19]
+
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
 # Removed
 - Removed comments from changelog
 
@@ -43,10 +100,18 @@
 - Missing delimiters
 
 ## [0.1.17]
+
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
 ### Added
 - More comments here
 
 ## [0.1.16]
+
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
 ### Added
 - Some more text right here
 
@@ -55,7 +120,15 @@
 
 ## [0.1.15]
 
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
+
 ## [0.1.14]
+
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
 ### Added
 - Some text right here
 
@@ -63,14 +136,23 @@
 - Version Bumped
 
 ## [0.1.13]
+
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
 ### Changed
 - Bump Version
 
 ## [0.1.0]
+
+## [0.2.4]
+### Changed
+- Use regex to find unreleased changelog instead of delimiters
 ### Added
 - Everything
 
-[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.2...HEAD
+[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.4...HEAD
+[0.2.4]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.3...v0.2.4
 [0.2.2]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.1.21...v0.2.0
