@@ -21,18 +21,18 @@ jobs:
           fetch-depth: '2'
   
       - name: Check for version bump
-        run: sh ./scripts/check-version-bump.sh
+        run: sh ./.scripts/check-version-bump.sh
 
       - name: Create artifacts
-        run: zip -r ./overworld.zip *
+        run: sh ./.scripts/pack.sh
 
       - name: Grab release changelog
         if: env.version-bumped == 'true'
-        run: sh ./scripts/grab-release-changelog.sh
+        run: sh ./.scripts/grab-release-changelog.sh
 
       - name: Update changelog
         if: env.version-bumped == 'true'
-        run: sh ./scripts/update-changelog.sh
+        run: sh ./.scripts/update-changelog.sh
 
       - name: Push changelog
         if: env.version-bumped == 'true'
@@ -50,7 +50,7 @@ jobs:
           tag_name: v${{ env.version }}
           body_path: ${{ env.release_changelog }}
           files: |
-            overworld.zip
+            artifacts/*
 
       - name: Release latest
         uses: "marvinpinto/action-automatic-releases@latest"
@@ -60,4 +60,4 @@ jobs:
           prerelease: false
           title: "Latest Build"
           files: |
-            overworld.zip
+            artifacts/*

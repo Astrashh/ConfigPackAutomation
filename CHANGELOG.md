@@ -2,10 +2,10 @@
 
 ## [Unreleased]
 ### Added
-
+- Packaging script
 
 ### Changed
-
+- Made scripts directory hidden
 
 ### Removed
 
