@@ -11,7 +11,7 @@ jobs:
     env:
       repo_url: ${{ github.server_url }}/${{ github.repository }}
       changelog: CHANGELOG.md
-      new_changelog: CHANGELOG_NEW.md
+      release_changelog: RELEASE_CHANGELOG.md
       start_regex: "^## \\[Unreleased\\]"
       end_regex: "^## "
     steps:
@@ -38,7 +38,7 @@ jobs:
         with:
           default_author: github_actions
           message: Version ${{ env.version }}
-          tag: v${{ env.version }} -F ${{ env.new_changelog }} --cleanup=verbatim
+          tag: v${{ env.version }} -F ${{ env.release_changelog }} --cleanup=verbatim
           add: CHANGELOG.md
         if: env.version-bumped == 'true'
 
@@ -46,7 +46,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ env.version }}
-          body_path: ${{ env.new_changelog }}
+          body_path: ${{ env.release_changelog }}
           files: |
             overworld.zip
         if: env.version-bumped == 'true'

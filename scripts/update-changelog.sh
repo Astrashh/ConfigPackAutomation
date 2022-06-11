@@ -4,8 +4,8 @@
 
 echo "Updating $changelog for v$version:"
 
-echo '  - Resetting unreleased changelog'
-sed -ni "1,/$start_regex/ p; /$end_regex/,$ p" $changelog
+echo '  - Inserting release changelog'
+sed -i "/$start_regex/,/$end_regex/{//!d}" $changelog
 sed -i "/$start_regex/ {
         a ### Added
         a
@@ -19,13 +19,9 @@ sed -i "/$start_regex/ {
         a ### Fixed
         a
         a
-    }" $changelog
-
-echo '  - Adding new version section after unreleased section'
-sed -i "/$end_regex/ {
-        a
         a ## [$version]
-        r $new_changelog
+        r $release_changelog
+        a
     }" $changelog
 
 echo '  - Adding new version anchor'
@@ -36,5 +32,5 @@ sed -i "s|^\[Unreleased\]: .*|[Unreleased]: $repo_url/compare/v$version...HEAD|"
 
 echo "v$version changelog:"
 echo '---'
-cat $new_changelog 
+cat $release_changelog 
 echo '---'

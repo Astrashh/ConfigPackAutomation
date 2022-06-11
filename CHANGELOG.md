@@ -1,153 +1,18 @@
 # Test Changelog
 
 ## [Unreleased]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
 ### Added
 
 
 ### Changed
-
+- Simplified update changelog script
 
 ### Removed
-
-
-### Fixed
-
-
-## [Unreleased]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
-### Added
-
-
-### Changed
-
-
-### Removed
-
+- Removed previous broken changelog entries
 
 ### Fixed
-
-
-### Added
-
-
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
-
-### Removed
-
-
-### Fixed
-
-
-## [0.2.2]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
-### Changed
-- Moved scripts to `/scripts` directory
-
-## [0.2.1]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
-### Fixed
-- Fixed typo with environment vars in script
-
-## [0.2.0]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
-
-
-## [0.1.21]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
-### Changed
-- Dynamically grab repo url
-
-### Fixed
-- Using incorrect repo url
-
-## [0.1.20]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
-### Added
-- Added release commit & tag information
-
-## [0.1.19]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
-# Removed
-- Removed comments from changelog
-
-# Fixed
-- Missing delimiters
-
-## [0.1.17]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
-### Added
-- More comments here
-
-## [0.1.16]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
-### Added
-- Some more text right here
-
-### Changed
-- The version
-
-## [0.1.15]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
-
-## [0.1.14]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
-### Added
-- Some text right here
-
-### Changed
-- Version Bumped
-
-## [0.1.13]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
-### Changed
-- Bump Version
 
 ## [0.1.0]
-
-## [0.2.4]
-### Changed
-- Use regex to find unreleased changelog instead of delimiters
 ### Added
 - Everything
 
