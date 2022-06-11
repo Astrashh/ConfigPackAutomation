@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Grabs the unreleased section from the changelog, and cleans it up for publication
+
 # Copy unreleased changelog to temporary file
 echo '- Extracting unreleased changelog'
 sed "0,/$start_regex/ d; /$end_regex/,$ d" $changelog > $release_changelog

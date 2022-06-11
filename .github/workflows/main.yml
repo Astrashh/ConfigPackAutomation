@@ -1,57 +1,58 @@
-name: CI
+name: CD
 
 on:
   push:
     branches: [ "main" ]
-  workflow_dispatch:
 
 jobs:
   release:
     runs-on: ubuntu-latest
+
     env:
       repo_url: ${{ github.server_url }}/${{ github.repository }}
       changelog: CHANGELOG.md
       release_changelog: RELEASE_CHANGELOG.md
       start_regex: "^## \\[Unreleased\\]"
       end_regex: "^## "
+
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: '2'
   
-      - name: check-version-bump
+      - name: Check for version bump
         run: sh ./scripts/check-version-bump.sh
 
-      - name: create-artifacts
+      - name: Create artifacts
         run: zip -r ./overworld.zip *
 
-      - name: grab-new-changelog
-        run: sh ./scripts/grab-new-changelog.sh
+      - name: Grab release changelog
         if: env.version-bumped == 'true'
+        run: sh ./scripts/grab-release-changelog.sh
 
-      - name: update-changelog
+      - name: Update changelog
+        if: env.version-bumped == 'true'
         run: sh ./scripts/update-changelog.sh
-        if: env.version-bumped == 'true'
 
-      - name: push-update-changelog
+      - name: Push changelog
+        if: env.version-bumped == 'true'
         uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
           message: Version ${{ env.version }}
           tag: v${{ env.version }} -F ${{ env.release_changelog }} --cleanup=verbatim
           add: CHANGELOG.md
-        if: env.version-bumped == 'true'
 
-      - name: release
+      - name: Release
+        if: env.version-bumped == 'true'
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ env.version }}
           body_path: ${{ env.release_changelog }}
           files: |
             overworld.zip
-        if: env.version-bumped == 'true'
 
-      - name: release-latest
+      - name: Release latest
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
@@ -60,4 +61,3 @@ jobs:
           title: "Latest Build"
           files: |
             overworld.zip
-

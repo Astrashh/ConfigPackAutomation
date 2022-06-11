@@ -5,7 +5,9 @@
 
 
 ### Changed
-
+- Cleaned up files
+  - Changed names for clarity
+  - Linting
 
 ### Removed
 
