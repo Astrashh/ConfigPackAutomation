@@ -14,7 +14,7 @@ if [ -z "$version" ]; then
     echo "No version change detected"
     echo "version-bumped=false" >> "$GITHUB_ENV"
 else
-    echo "Detected version change v$prev_version -> v$version"
+    echo "Detected version change v$previous_version -> v$version"
     echo "version-bumped=true" >> "$GITHUB_ENV"
     echo "previous_version=$previous_version" >> "$GITHUB_ENV"
     echo "version=$version" >> "$GITHUB_ENV"

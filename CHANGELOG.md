@@ -11,7 +11,7 @@
 
 
 ### Fixed
-
+- Forgot a v in front of version
 
 ## [v0.2.8]
 ### Changed
