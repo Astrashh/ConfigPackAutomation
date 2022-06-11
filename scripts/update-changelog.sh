@@ -5,8 +5,8 @@
 echo "Updating $changelog for v$version:"
 
 echo '  - Resetting unreleased changelog'
-sed -ni "1,/$start_delimiter/ p; /$end_delimiter/,$ p" $changelog
-sed -i "/$start_delimiter/ {
+sed -ni "1,/$start_regex/ p; /$end_regex/,$ p" $changelog
+sed -i "/$start_regex/ {
         a ### Added
         a
         a
@@ -22,7 +22,7 @@ sed -i "/$start_delimiter/ {
     }" $changelog
 
 echo '  - Adding new version section after unreleased section'
-sed -i "/$end_delimiter/ {
+sed -i "/$end_regex/ {
         a
         a ## [$version]
         r $new_changelog

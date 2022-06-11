@@ -1,20 +1,17 @@
 # Test Changelog
 
 ## [Unreleased]
-<!-- UNRELEASED START -->
 ### Added
 
 
 ### Changed
-
+- Use regex to find unreleased changelog instead of delimiters
 
 ### Removed
 
 
 ### Fixed
 
-
-<!-- UNRELEASED END -->
 
 ## [0.2.2]
 ### Changed

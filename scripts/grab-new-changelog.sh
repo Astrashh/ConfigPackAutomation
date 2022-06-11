@@ -2,7 +2,7 @@
 
 # Copy unreleased changelog to temporary file
 echo '- Extracting unreleased changelog'
-sed "1,/$start_delimiter/ d; /$end_delimiter/,$ d" $changelog > $new_changelog
+sed "0,/$start_regex/ d; /$end_regex/,$ d" $changelog > $new_changelog
 
 # Remove unused subheadings from new changelog
 echo '- Stripping empty titles from changelog'
