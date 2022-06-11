@@ -5,15 +5,19 @@
 
 
 ### Changed
-- Cleaned up files
-  - Changed names for clarity
-  - Linting
+
 
 ### Removed
 
 
 ### Fixed
 
+
+## [v0.2.6]
+### Changed
+- Cleaned up files
+  - Changed names for clarity
+  - Linting
 
 ## [0.2.5]
 ### Changed
@@ -26,7 +30,8 @@
 ### Added
 - Everything
 
-[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.5...HEAD
+[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.6...HEAD
+[v0.2.6]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.5...v0.2.6
 [0.2.5]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.4...v0.2.5
 [0.2.4]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.3...v0.2.4
 [0.2.2]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.1...v0.2.2
