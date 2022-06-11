@@ -2,13 +2,20 @@
 
 ## [Unreleased]
 ### Added
-- Include polybot info in release
+
 
 ### Changed
 
 
 ### Removed
 
+
+### Fixed
+
+
+## [v0.2.9]
+### Added
+- Include polybot info in release
 
 ### Fixed
 - Forgot a v in front of version
@@ -41,7 +48,8 @@
 ### Added
 - Everything
 
-[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.8...HEAD
+[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.9...HEAD
+[v0.2.9]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.8...v0.2.9
 [v0.2.8]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.7...v0.2.8
 [v0.2.7]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.6...v0.2.7
 [v0.2.6]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.5...v0.2.6
