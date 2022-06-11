@@ -1,4 +1,4 @@
 #!/bin/bash
 
-mkdir artifacts
-zip -r ./artifacts/overworld.zip *
+mkdir .artifacts
+zip -r ./.artifacts/overworld.zip *

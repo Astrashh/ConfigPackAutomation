@@ -50,7 +50,7 @@ jobs:
           tag_name: v${{ env.version }}
           body_path: ${{ env.release_changelog }}
           files: |
-            artifacts/*
+            .artifacts/*
 
       - name: Release latest
         uses: "marvinpinto/action-automatic-releases@latest"
@@ -60,4 +60,4 @@ jobs:
           prerelease: false
           title: "Latest Build"
           files: |
-            artifacts/*
+            .artifacts/*

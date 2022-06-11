@@ -5,7 +5,7 @@
 
 
 ### Changed
-
+- Made artifacts directory hidden
 
 ### Removed
 
