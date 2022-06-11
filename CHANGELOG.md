@@ -11,7 +11,7 @@
 
 
 ### Fixed
-
+- Put polybot info in wrong place
 
 ## [v0.2.9]
 ### Added
