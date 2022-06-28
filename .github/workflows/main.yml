@@ -39,7 +39,6 @@ jobs:
         if: env.version-bumped == 'true'
         uses: EndBug/add-and-commit@v9
         with:
-          committer_name: PolyBot
           author_name: Polyhedral-Bot
           author_email: polybot@protonmail.com
           message: Version ${{ env.version }}
