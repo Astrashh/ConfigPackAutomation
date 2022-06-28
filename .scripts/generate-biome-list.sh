@@ -19,13 +19,11 @@ do
     done
     biome_name=${items[-1]}
     unset items[-1]
-    echo "# $biome_name" >> $DOC
-    echo "" >> $DOC
-    echo "##### CATEGORIES" >> $DOC
-    echo "" >> $DOC
+    echo "## $biome_name" >> $DOC
+    printf "CATEGORIES - " >> $DOC
     for item in ${items[@]}
     do
-        echo "- \`$item\`" >> $DOC
+        printf "\`$item\` " >> $DOC
     done
-    echo "" >> $DOC
+    printf "\n\n" >> $DOC
 done
