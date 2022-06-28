@@ -14,6 +14,13 @@ jobs:
       - name: Generate Biome List 
         run: sh ./.scripts/generate-biome-list.sh
 
+      - name: Upload Documentation to Wiki
+        uses: SwiftDocOrg/github-wiki-publish-action@v1
+        with:
+          path: ".docs"
+        env:
+          GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+
   release:
     runs-on: ubuntu-latest
 
