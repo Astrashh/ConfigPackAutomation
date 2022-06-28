@@ -6,7 +6,6 @@ DOC='.docs/biome-list.md'
 
 find biomes/*/ -name "*.yml" -not -path "biomes/abstract/*" | sed "s|^biomes/||" > $LIST
 
-rm $DOC
 touch $DOC
 echo '# Biome List' >> $DOC
 echo '' >> $DOC
