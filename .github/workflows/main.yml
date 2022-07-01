@@ -10,7 +10,9 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-      
+        with:
+          submodules: recursive # Load .wiki/images submodule
+
       - name: Generate Biome List 
         run: bash ./.scripts/generate-biome-list.sh
 
