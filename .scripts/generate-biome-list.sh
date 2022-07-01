@@ -1,6 +1,5 @@
 #!/bin/bash
 
-mkdir .wiki
 WIKI_PATH='.wiki'
 LIST='biome-list.txt'
 DOC="$WIKI_PATH/Biome-List.md"
