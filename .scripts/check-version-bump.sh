@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$GITHUB_ACTIONS" != true]; then
+if [ "$GITHUB_ACTIONS" != true ]; then
     echo "This script must be ran via GitHub actions."
     exit 1
 fi
