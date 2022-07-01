@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$GITHUB_ACTIONS" != true]; then
+    echo "This script must be ran via GitHub actions."
+    exit 1
+fi
+
 # Search HEAD diff for a change in the pack version
 PACK_MANIFEST=pack.yml
 version_diff=$(git diff HEAD^ HEAD "$PACK_MANIFEST" | grep '^+version: ')

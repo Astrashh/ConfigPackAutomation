@@ -1,35 +1,34 @@
-name: CD
+name: CI/CD
 
 on:
   push:
     branches: [ "main" ]
 
 jobs:
-  generate-docs:
+  release-docs:
     runs-on: ubuntu-latest
+    env:
+      WIKI_DIRECTORY: .wiki # Contents of this directory get pushed to the wiki
+      WIKI_PARENT_REPOSITORY: ${{ github.repository }} # Where to publish to
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
-          submodules: recursive # Load .wiki/images submodule
+          submodules: recursive
 
       - name: Generate Biome List 
         run: bash ./.scripts/generate-biome-list.sh
 
       - name: Upload Documentation to Wiki
-        #uses: SwiftDocOrg/github-wiki-publish-action@v1
-        #with:
-        #  path: ".wiki"
         run: sh ./.scripts/upload-to-wiki.sh 
         env:
-          WIKI_PARENT_REPOSITORY: ${{ github.repository }}
-          LOGIN_NAME: Polyhedral-Bot
-          LOGIN_EMAIL: polybot@protonmail.com
+          LOGIN_NAME: ${{ secrets.GH_ACTIONS_COMMIT_NAME }} 
+          LOGIN_EMAIL: ${{ secrets.GH_ACTIONS_COMMIT_EMAIL }} 
           ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
 
   release:
     runs-on: ubuntu-latest
-
     env:
       repo_url: ${{ github.server_url }}/${{ github.repository }}
       changelog: CHANGELOG.md
@@ -61,11 +60,11 @@ jobs:
         if: env.version-bumped == 'true'
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: Polyhedral-Bot
-          author_email: polybot@protonmail.com
+          author_name: ${{ secrets.GH_ACTIONS_COMMIT_NAME }} 
+          author_email: ${{ secrets.GH_ACTIONS_COMMIT_EMAIL }} 
           message: Version ${{ env.version }}
           tag: v${{ env.version }} -F ${{ env.release_changelog }} --cleanup=verbatim
-          add: CHANGELOG.md
+          add: ${{ env.changelog }}
 
       - name: Release
         if: env.version-bumped == 'true'
@@ -85,3 +84,4 @@ jobs:
           title: "Latest Build"
           files: |
             .artifacts/*
+

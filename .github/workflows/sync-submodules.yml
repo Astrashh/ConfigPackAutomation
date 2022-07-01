@@ -2,8 +2,9 @@ name: Sync Submodules
 
 on:
   repository_dispatch: # Submodules dispatch to this when they're updated
-    types: [ sync-submodules ]
-
+    types: 
+      - Sync Images
+ 
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -22,8 +23,8 @@ jobs:
       - name: Commit updated submodules
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: Polyhedral-Bot
-          author_email: polybot@protonmail.com
+          author_name: ${{ secrets.GH_ACTIONS_COMMIT_NAME }} 
+          author_email: ${{ secrets.GH_ACTIONS_COMMIT_EMAIL }} 
           message: Update submodules
           add: "*"
 
