@@ -22,5 +22,5 @@ jobs:
           author_name: Polyhedral-Bot
           author_email: polybot@protonmail.com
           message: Update submodules
-          add: *
+          add: "*"
 
