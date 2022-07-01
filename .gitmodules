@@ -1,0 +1,3 @@
+[submodule "images"]
+	path = .docs/images
+	url = git@github.com:Astrashh/ConfigPackAutomationImages.git
