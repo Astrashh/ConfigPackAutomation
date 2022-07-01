@@ -1,0 +1,26 @@
+name: Sync Submodules
+
+on:
+  workflow_dispatch: # Submodules dispatch to this when they're updated
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          submodules: recurive
+
+      - name: Update submodules
+        run: |
+          git submodule update --remote --recursive
+
+      - name: Commit updated submodules
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Polyhedral-Bot
+          author_email: polybot@protonmail.com
+          message: Update submodules
+          add: *
+
