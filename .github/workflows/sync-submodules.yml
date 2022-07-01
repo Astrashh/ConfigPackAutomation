@@ -9,12 +9,11 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          submodules: recurive
 
       - name: Update submodules
         run: |
-          git submodule update --remote --recursive
+          git submodule update --init --recursive
+          git submodule update --recursive --remote 
 
       - name: Commit updated submodules
         uses: EndBug/add-and-commit@v9
