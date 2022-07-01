@@ -2,11 +2,11 @@
 
 # Moves unreleased section to a new version release section, and updates anchors at the bottom of the changelog
 
-echo "Updating $changelog for v$version:"
+echo "Updating $CHANGELOG for v$version:"
 
 echo '- Inserting release changelog'
-sed -i "/$start_regex/,/$end_regex/{//!d}" $changelog
-sed -i "/$start_regex/ {
+sed -i "/$START_REGEX/,/$END_REGEX/{//!d}" $CHANGELOG
+sed -i "/$START_REGEX/ {
         a ### Added
         a
         a
@@ -20,17 +20,17 @@ sed -i "/$start_regex/ {
         a
         a
         a ## [v$version]
-        r $release_changelog
+        r $RELEASE_CHANGELOG
         a
-    }" $changelog
+    }" $CHANGELOG
 
 echo '- Adding new version anchor'
-sed -i "/^\[Unreleased]/a [v$version]: $repo_url/compare/v$previous_version...v$version" $changelog
+sed -i "/^\[Unreleased]/a [v$version]: $REPOSITORY_URL/compare/v$previous_version...v$version" $CHANGELOG
 
 echo '- Updating unreleased anchor'
-sed -i "s|^\[Unreleased\]: .*|[Unreleased]: $repo_url/compare/v$version...HEAD|" $changelog
+sed -i "s|^\[Unreleased\]: .*|[Unreleased]: $REPOSITORY_URL/compare/v$version...HEAD|" $CHANGELOG
 
 echo "v$version changelog:"
 echo '---'
-cat $release_changelog 
+cat $RELEASE_CHANGELOG 
 echo '---'
