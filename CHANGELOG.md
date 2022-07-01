@@ -13,6 +13,9 @@
 ### Fixed
 
 
+## [v0.2.12]
+
+
 ## [v0.2.11]
 ### Added
 - Added biomes dir from overworld for testing
@@ -56,7 +59,8 @@
 ### Added
 - Everything
 
-[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.11...HEAD
+[Unreleased]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.12...HEAD
+[v0.2.12]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.11...v0.2.12
 [v0.2.11]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.10...v0.2.11
 [v0.2.10]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.9...v0.2.10
 [v0.2.9]: https://github.com/Astrashh/ConfigPackAutomation/compare/v0.2.8...v0.2.9
