@@ -1,7 +1,8 @@
 name: Sync Submodules
 
 on:
-  workflow_dispatch: # Submodules dispatch to this when they're updated
+  repository_dispatch: # Submodules dispatch to this when they're updated
+    types: [ sync-submodules ]
 
 jobs:
   sync:
