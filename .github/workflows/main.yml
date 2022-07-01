@@ -17,11 +17,14 @@ jobs:
         run: bash ./.scripts/generate-biome-list.sh
 
       - name: Upload Documentation to Wiki
-        uses: SwiftDocOrg/github-wiki-publish-action@v1
-        with:
-          path: ".wiki"
+        #uses: SwiftDocOrg/github-wiki-publish-action@v1
+        #with:
+        #  path: ".wiki"
+        run: sh ./.scripts/upload-to-wiki.sh ${{ github.server_url }}/${{ github.repository }}.wiki.git
         env:
           GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          LOGIN_NAME: Polyhedral-Bot
+          LOGIN_EMAIL: polybot@protonmail.com
 
   release:
     runs-on: ubuntu-latest
