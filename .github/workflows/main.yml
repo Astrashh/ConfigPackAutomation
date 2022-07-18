@@ -42,7 +42,10 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: '2'
-  
+
+      - name: Validate Biome Colors
+        run: sh ./.scripts/validate-biome-colors.sh
+
       - name: Check for version bump
         run: sh ./.scripts/check-version-bump.sh
 
