@@ -15,7 +15,7 @@ jobs:
 
   release-docs:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
+    if: ${{ github.event_name == 'push' }}
     env:
       WIKI_DIRECTORY: .wiki # Contents of this directory get pushed to the wiki
       WIKI_PARENT_REPOSITORY: ${{ github.repository }} # Where to publish to
