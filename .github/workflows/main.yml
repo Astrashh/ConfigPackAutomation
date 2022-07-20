@@ -60,8 +60,8 @@ jobs:
 
       - name: Check for version bump
         run: |
-          # Search HEAD diff for a change in the pack version
           PACK_MANIFEST=pack.yml
+          # Search HEAD diff for a change in the pack version
           version_diff=$(git diff HEAD^ HEAD "$PACK_MANIFEST" | grep '^+version: ')
           previous_version_diff=$(git diff HEAD^ HEAD "$PACK_MANIFEST" | grep '^-version: ')
 
