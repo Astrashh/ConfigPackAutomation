@@ -2,6 +2,7 @@ id: DEEP_DARK
 type: BIOME
 extends: [ CAVE, BASE ]
 vanilla: minecraft:deep_dark
+colors: this should break things
 
 palette:
   - BLOCK:minecraft:stone: 319
